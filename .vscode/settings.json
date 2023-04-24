@@ -1,0 +1,31 @@
+{
+  "cSpell.words": [
+    "browserslist",
+    "fontface",
+    "intlify",
+    "lintrc",
+    "Pinia",
+    "precommit",
+    "Roadmap",
+    "roboto",
+    "singleline",
+    "stylelint",
+    "stylelintrc",
+    "vite",
+    "vitejs",
+    "vitest",
+    "vuetify",
+    "webfontloader"
+  ],
+  "stylelint.config": null,
+  "eslint.validate": [
+    "javascript",
+    "typescript",
+  ],
+  "solidity.formatter": "none",
+  "vetur.format.defaultFormatter.css": "none",
+  "vetur.format.defaultFormatter.html": "none",
+  "vetur.format.defaultFormatter.less": "none",
+  "vetur.format.defaultFormatter.postcss": "none",
+  "vetur.format.defaultFormatter.pug": "none"
+}

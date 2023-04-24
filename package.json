@@ -1,0 +1,86 @@
+{
+  "name": "vue-frontend-bootstrap",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Kickoff for multi-page web apps & landing pages",
+  "scripts": {
+    "serve": "vite",
+    "prod": "vite preview",
+    "build": "vite build",
+    "lint": "npm run es-lint &&  npm run style-lint && npm run style-lint-vue",
+    "prepare": "husky install",
+    "test": "vitest",
+    "coverage": "vitest run --coverage",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "src/**/*.{js,ts,tsx}": [
+      "vue-cli-service lint"
+    ],
+    "src/**/*.scss": [
+      "stylelint --fix"
+    ],
+    "src/**/*.vue": [
+      "stylelint --fix",
+      "vue-cli-service lint"
+    ],
+    "*.css": "stylelint --fix"
+  },
+  "cacheDirectories": [
+    "node_modules"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/heyimnowi/vue-frontend-bootstrap.git"
+  },
+  "author": "heyimnowi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/heyimnowi/vue-frontend-bootstrap/issues"
+  },
+  "homepage": "https://github.com/heyimnowi/vue-frontend-bootstrap",
+  "dependencies": {
+    "@mdi/font": "5.9.55",
+    "core-js": "^3.8.3",
+    "pinia": "^2.0.12",
+    "roboto-fontface": "*",
+    "vue": "^3.2.13",
+    "vue-router": "^4.0.14",
+    "vue-ui-library": "^3.0.0",
+    "vuetify": "^3.0.0-beta.0",
+    "webfontloader": "^1.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.16",
+    "@babel/eslint-parser": "^7.12.16",
+    "@intlify/vite-plugin-vue-i18n": "^3.3.1",
+    "@vitejs/plugin-vue": "^2.0.0",
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-plugin-eslint": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "@vuetify/vite-plugin": "^1.0.0-alpha.0",
+    "c8": "^7.11.0",
+    "eslint": "^7.32.0",
+    "eslint-plugin-vue": "^8.0.3",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.3.7",
+    "pug": "^3.0.2",
+    "sass": "^1.38.0",
+    "sass-loader": "^10.0.0",
+    "stylelint": "^14.5.3",
+    "stylelint-config-recommended-vue": "^1.3.0",
+    "stylelint-config-standard-scss": "^3.0.0",
+    "vite": "^2.0.0",
+    "vite-plugin-vue-pug-lint": "^1.1.0",
+    "vitest": "^0.6.1",
+    "vue-cli-plugin-vuetify": "~2.4.7",
+    "vue-i18n": "^9.1.9",
+    "vuetify-loader": "^2.0.0-alpha.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie 11"
+  ]
+}
